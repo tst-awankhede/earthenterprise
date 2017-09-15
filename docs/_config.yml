@@ -1,7 +1,8 @@
 name: google earth enterprise
 githuburl: https://github.com/google/earthenterprise/
 githubWikiUrl: https://github.com/google/earthenterprise/wiki/
-releasesUrl: https://github.com/google/earthenterprise/releases/tag/5.2.0-3.final
+releasesUrl: https://github.com/google/earthenterprise/releases
+
 #markdown: redcarpet
 
 #highlighter: pygments

@@ -44,7 +44,11 @@
                     <ul class='dropdown'>
                       {% for child in item.children %}
                         <li>
-                          <a href="{{ site.baseurl}}/{{ child.path }}">{{ child.name }}</a>
+                          {% if child.path contains "http" %}
+                            <a href="{{ child.path }}">{{ child.name }}</a>
+			  {% else %}
+                            <a href="{{ site.baseurl}}/{{ child.path }}">{{ child.name }}</a>
+                          {% else %}
                         </li>
                       {% endfor %}
                     </ul>
@@ -59,7 +63,7 @@
                     <a href="{{site.githubWikiUrl}}">Develop</a>
               </li>
               <li class="">
-                    <a href="{{site.releasesUrl}}">Latest Release</a>
+                    <a href="{{site.releasesUrl}}">Releases</a>
               </li>
               <li class="">
                     <a class="icon-github" href="{{site.githuburl}}">Github</a>
